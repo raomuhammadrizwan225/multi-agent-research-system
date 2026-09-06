@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ResearchMind AI Research Agent">
+    <title>ResearchMind - AI Research Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+
+        <div class="brand-block">
+            <div class="brand">
+                Research<span>Mind</span>
+            </div>
+
+            <div class="brand-subtitle">
+                AI Research Agent
+            </div>
+        </div>
+
+        <nav
+            class="nav-list"
+            aria-label="Primary navigation"
+        >
+
+            <button
+                class="nav-item active"
+                type="button"
+            >
+                <span
+                    class="nav-icon"
+                    aria-hidden="true"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"
+                        />
+                    </svg>
+                </span>
+
+                New Research
+            </button>
+
+
+            <button
+                class="nav-item"
+                type="button"
+            >
+                <span
+                    class="nav-icon"
+                    aria-hidden="true"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="8"
+                        />
+
+                        <path
+                            d="M12 7v5l3 2"
+                        />
+                    </svg>
+                </span>
+
+                History
+            </button>
+
+
+            <button
+                class="nav-item"
+                type="button"
+            >
+                <span
+                    class="nav-icon"
+                    aria-hidden="true"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M6 4h12v17l-6-4-6 4z"
+                        />
+                    </svg>
+                </span>
+
+                Saved Reports
+            </button>
+
+
+            <button
+                class="nav-item"
+                type="button"
+            >
+                <span
+                    class="nav-icon"
+                    aria-hidden="true"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="3"
+                        />
+
+                        <path
+                            d="M19 12a7 7 0 0 0-.13-1.34l2-1.54-2-3.46-2.43.98A7 7 0 0 0 14.1 5.3L13.75 3h-4.5L8.9 5.3a7 7 0 0 0-2.34 1.34l-2.43-.98-2 3.46 2 1.54A7 7 0 0 0 4 12c0 .46.04.9.13 1.34l-2 1.54 2 3.46 2.43-.98A7 7 0 0 0 8.9 18.7l.35 2.3h4.5l.35-2.3a7 7 0 0 0 2.34-1.34l2.43.98 2-3.46-2-1.54c.09-.44.13-.88.13-1.34z"
+                        />
+                    </svg>
+                </span>
+
+                Settings
+            </button>
+
+
+            <button
+                class="nav-item"
+                type="button"
+            >
+                <span
+                    class="nav-icon"
+                    aria-hidden="true"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                        />
+
+                        <path
+                            d="M9.8 9a2.3 2.3 0 1 1 3.8 1.75c-1 .78-1.6 1.15-1.6 2.25"
+                        />
+
+                        <circle
+                            cx="12"
+                            cy="17"
+                            r=".7"
+                            fill="currentColor"
+                            stroke="none"
+                        />
+                    </svg>
+                </span>
+
+                Help
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-quote">
+
+            <div class="quote-text">
+                Better research leads to a brighter tomorrow.
+            </div>
+
+            <div class="quote-rule"></div>
+
+            <div class="quote-brand">
+                ResearchMind
+            </div>
+
+            <div class="quote-caption">
+                AI for a smarter world.
+            </div>
+
+            <svg
+                class="sidebar-leaves"
+                viewBox="0 0 180 130"
+                aria-hidden="true"
+            >
+                <g
+                    fill="#8fd0a2"
+                    opacity=".48"
+                >
+                    <ellipse
+                        cx="150"
+                        cy="100"
+                        rx="14"
+                        ry="34"
+                        transform="rotate(35 150 100)"
+                    />
+
+                    <ellipse
+                        cx="125"
+                        cy="112"
+                        rx="12"
+                        ry="29"
+                        transform="rotate(-35 125 112)"
+                    />
+
+                    <ellipse
+                        cx="162"
+                        cy="73"
+                        rx="11"
+                        ry="27"
+                        transform="rotate(58 162 73)"
+                    />
+
+                    <ellipse
+                        cx="102"
+                        cy="122"
+                        rx="9"
+                        ry="23"
+                        transform="rotate(-55 102 122)"
+                    />
+                </g>
+            </svg>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <section
+            class="sources-screen"
+            id="sources-screen"
+        >
+
+            <div
+                class="botanical botanical-left"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="botanical botanical-right"
+                aria-hidden="true"
+            ></div>
+
+
+            <header class="hero">
+
+                <h1>
+                    Research<span>Mind</span>
+                </h1>
+
+                <p>
+                    AI Research Agent
+                </p>
+
+                <small>
+                    From questions to well-researched answers.
+                </small>
+
+            </header>
+
+
+            <div class="research-bar">
+
+                <label
+                    class="sr-only"
+                    for="research-topic"
+                >
+                    Research Topic
+                </label>
+
+                <input
+                    id="research-topic"
+                    type="text"
+                    placeholder="Enter your research question..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="run-research"
+                    type="button"
+                >
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="11"
+                            cy="11"
+                            r="6"
+                        />
+
+                        <path
+                            d="m16 16 4 4"
+                        />
+                    </svg>
+
+                    Run Research Pipeline
+                </button>
+
+            </div>
+
+
+            <div
+                class="pipeline"
+                aria-label="Research pipeline"
+            >
+
+                <div class="pipeline-track"></div>
+
+
+                <div
+                    class="pipeline-step"
+                    data-step="search"
+                >
+                    <div class="step-circle">
+                        1
+                    </div>
+
+                    <div class="step-name">
+                        Search
+                    </div>
+
+                    <div class="step-desc">
+                        Find sources
+                    </div>
+                </div>
+
+
+                <div
+                    class="pipeline-step"
+                    data-step="reader"
+                >
+                    <div class="step-circle">
+                        2
+                    </div>
+
+                    <div class="step-name">
+                        Reader
+                    </div>
+
+                    <div class="step-desc">
+                        Summarize content
+                    </div>
+                </div>
+
+
+                <div
+                    class="pipeline-step"
+                    data-step="writer"
+                >
+                    <div class="step-circle">
+                        3
+                    </div>
+
+                    <div class="step-name">
+                        Writer
+                    </div>
+
+                    <div class="step-desc">
+                        Generate report
+                    </div>
+                </div>
+
+
+                <div
+                    class="pipeline-step"
+                    data-step="critic"
+                >
+                    <div class="step-circle">
+                        4
+                    </div>
+
+                    <div class="step-name">
+                        Critic
+                    </div>
+
+                    <div class="step-desc">
+                        Review & improve
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div
+                id="status-banner"
+                class="status-banner"
+                hidden
+            >
+
+                <div class="status-dot"></div>
+
+                <div>
+                    <strong id="status-title">
+                        Research pipeline is running
+                    </strong>
+
+                    <p id="status-message">
+                        Collecting sources and building your report.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="agents-grid">
+
+                <section class="agent-card">
+
+                    <div class="agent-header">
+
+                        <div class="agent-heading-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <circle
+                                    cx="11"
+                                    cy="11"
+                                    r="6"
+                                />
+
+                                <path
+                                    d="m16 16 4 4"
+                                />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h2>
+                                Search Agent
+                            </h2>
+
+                            <p id="search-subtitle">
+                                Finds 5 relevant sources from across the web
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="search-results"
+                        class="agent-content empty-state"
+                    >
+                        Enter a research topic and run the pipeline to find five sources.
+                    </div>
+
+                </section>
+
+
+                <section class="agent-card">
+
+                    <div class="agent-header">
+
+                        <div class="agent-heading-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M6 3h9l4 4v14H6z"
+                                />
+
+                                <path
+                                    d="M15 3v5h4M9 12h7M9 16h7"
+                                />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h2>
+                                Reader Agent
+                            </h2>
+
+                            <p id="reader-subtitle">
+                                Reads and summarizes all 5 sources
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="reader-results"
+                        class="agent-content empty-state"
+                    >
+                        Source summaries will appear here after the Search Agent finishes.
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <button
+                id="scroll-to-report"
+                class="scroll-prompt"
+                type="button"
+                hidden
+            >
+                <span class="scroll-arrow">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M12 5v13M7 13l5 5 5-5"
+                        />
+                    </svg>
+
+                </span>
+
+                <span>
+                    Scroll down to see the research report and analysis
+                </span>
+
+            </button>
+
+        </section>
+
+
+        <section
+            class="report-screen"
+            id="report-screen"
+        >
+
+            <div
+                class="report-botanical"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="report-card">
+
+                <div class="report-card-header">
+
+                    <div class="report-title-wrap">
+
+                        <div class="report-icon">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M6 3h9l4 4v14H6z"
+                                />
+
+                                <path
+                                    d="M15 3v5h4M9 12h7M9 16h7"
+                                />
+                            </svg>
+                        </div>
+
+                        <h2>
+                            Research Report
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        id="download-report"
+                        class="outline-button"
+                        type="button"
+                        disabled
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M12 3v12M7 10l5 5 5-5M5 20h14"
+                            />
+                        </svg>
+
+                        Download Report
+
+                    </button>
+
+                </div>
+
+
+                <article
+                    id="report-content"
+                    class="report-content empty-report"
+                >
+                    Your generated report will appear here after the pipeline completes.
+                </article>
+
+            </div>
+
+
+            <section class="critic-section">
+
+                <div class="critic-heading">
+
+                    <div class="critic-icon">
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="m12 3 2.5 5.1 5.6.8-4.05 3.95.95 5.55L12 15.8 7 18.4l.95-5.55L3.9 8.9l5.6-.8z"
+                            />
+                        </svg>
+                    </div>
+
+                    <h2>
+                        Critic Feedback
+                    </h2>
+
+                </div>
+
+
+                <div class="critic-grid">
+
+                    <div class="score-card">
+
+                        <div class="score-ring">
+
+                            <span id="critic-score">
+                                -
+                            </span>
+
+                            <small>
+                                /10
+                            </small>
+
+                        </div>
+
+
+                        <div class="score-copy">
+
+                            <strong>
+                                Overall Score
+                            </strong>
+
+                            <p>
+                                Quality, accuracy, and structure of the generated report.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="feedback-card strengths-card"
+                    >
+
+                        <h3>
+                            Strengths
+                        </h3>
+
+                        <ul id="critic-strengths">
+                            <li>
+                                Feedback will appear after the Critic Chain completes.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div
+                        class="feedback-card improve-card"
+                    >
+
+                        <h3>
+                            Areas to Improve
+                        </h3>
+
+                        <ul id="critic-improvements">
+                            <li>
+                                Improvement suggestions will appear here.
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div
+                        class="feedback-card verdict-card"
+                    >
+
+                        <h3>
+                            Final Verdict
+                        </h3>
+
+                        <p id="critic-verdict">
+                            The final verdict will appear here after the report is reviewed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <div
+                class="report-quote"
+                aria-hidden="true"
+            >
+
+                <span class="quote-mark">
+                    “
+                </span>
+
+                <p>
+                    Knowledge grows
+                    <br>
+                    when questions lead the way.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
