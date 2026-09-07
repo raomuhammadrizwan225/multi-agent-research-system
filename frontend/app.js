@@ -302,8 +302,9 @@ function renderCritic(text) {
     elements.verdict.textContent = verdict;
 }
 
+const API_BASE_URL = "https://multi-agent-research-system-blond.vercel.app";
 async function apiPost(path, payload) {
-    const response = await fetch(path, {
+    const response = await fetch(`${API_BASE_URL}${path}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
